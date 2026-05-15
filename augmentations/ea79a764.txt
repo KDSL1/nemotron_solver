@@ -1,0 +1,423 @@
+[category]
+spelling
+[prompt]
+In Alice's Wonderland, secret processing rules are used on text.
+
+This is a sample input.
+00
+eves prak berh
+01
+owan poverty copies
+02
+isar diets revistas
+
+This is a sample output.
+00
+eves prak berh -> –e–v–e–s–p–r–a–k–b–e–r–h–
+01
+owan poverty copies -> –o–w–a–n–p–o–v–e–r–t–y–c–o–p–i–e–s–
+02
+isar diets revistas -> –i–s–a–r–d–i–e–t–s–r–e–v–i–s–t–a–s–
+
+This is your input.
+00
+nius suchte stav
+01
+colo zespo recinto
+02
+idis march aveug
+03
+besch protease monastic
+04
+liness rusk nowhere
+05
+irak jeunes deixa
+06
+elsius pages abusive
+07
+issan monot oce
+08
+iterte ongoing mixt
+09
+szer cabello molest
+10
+il jue kapott
+11
+ercise vaccine eli
+12
+perti kompleks vacances
+13
+jon maks prince
+14
+eterm stalled sirve
+15
+plots irrit cocktail
+16
+izarro voce nursing
+17
+bourg hul adopts
+18
+substr curling chaud
+19
+onski kup molyb
+20
+atra sierp encarg
+21
+ironment seno seznam
+22
+atinine horror beinh
+23
+teresse stopping oyida
+24
+yre inverter matric
+25
+arschijn dal earth
+26
+igte ful zw
+27
+lip prestig dumb
+28
+active absurd katol
+29
+limits orosz glac
+30
+fl peripher terakhir
+31
+build ayud devotion
+32
+piele unico tourne
+33
+elike mese persoon
+34
+rypted lamin effettu
+35
+ocated hennes copia
+36
+olicy familiar embora
+37
+ahmen scarcely cola
+38
+aturen seam stamm
+39
+itis sharing ctx
+40
+paro scarce devam
+41
+ulers sunlight classe
+42
+infty celu dek
+43
+esti cuer message
+44
+awesome briefly etmek
+45
+liga believes llegar
+46
+entially diagnose cellular
+47
+worth xhr plaf
+48
+amespace bringt monarch
+49
+refresh ostens null
+50
+inj ostat oath
+51
+okemon dissolve agr
+52
+izat conceito wer
+53
+reau onc occ
+54
+oh bees invit
+55
+iac cari deduce
+56
+kil anxious rho
+57
+closest seitdem pointe
+58
+amorph existait inund
+59
+ikin schaff paljon
+60
+irse membran vectors
+61
+lerinin sorrow espec
+62
+uei remedy carbono
+63
+orat direkten diret
+64
+abases horrib prolet
+65
+stead prepared miej
+66
+kee bekannte cappella
+67
+uckles aparecen cinemat
+68
+igid berl lurr
+69
+ricas five fuoco
+70
+atoms locali recebeu
+71
+ge verf victoire
+72
+enburg agente smooth
+73
+footer adopted burnt
+74
+arious heap popis
+75
+ippets consulta nd
+76
+aknya sit reinfor
+77
+lijk hide longest
+78
+register zij linkage
+79
+size consigo video
+80
+iftet knight warmth
+81
+orien scol bieten
+82
+estim genetics ders
+83
+ixen flames jusqu
+84
+owskiego removing cai
+85
+ijski wyr plaatsen
+86
+ggere citrate sponsors
+87
+cad runat egun
+88
+twitter mapper vivo
+89
+asu tris embryos
+90
+oshi towel stopped
+91
+gado listes homog
+92
+gna antif ji
+93
+igue produto bihurt
+94
+heim anciens apesar
+95
+ismar dread ammo
+96
+aron folgten eser
+97
+uss custody lute
+98
+skie forment pumped
+99
+ols reveal tig
+[completion]
+00
+nius suchte stav -> –n–i–u–s–s–u–c–h–t–e–s–t–a–v–
+01
+colo zespo recinto -> –c–o–l–o–z–e–s–p–o–r–e–c–i–n–t–o–
+02
+idis march aveug -> –i–d–i–s–m–a–r–c–h–a–v–e–u–g–
+03
+besch protease monastic -> –b–e–s–c–h–p–r–o–t–e–a–s–e–m–o–n–a–s–t–i–c–
+04
+liness rusk nowhere -> –l–i–n–e–s–s–r–u–s–k–n–o–w–h–e–r–e–
+05
+irak jeunes deixa -> –i–r–a–k–j–e–u–n–e–s–d–e–i–x–a–
+06
+elsius pages abusive -> –e–l–s–i–u–s–p–a–g–e–s–a–b–u–s–i–v–e–
+07
+issan monot oce -> –i–s–s–a–n–m–o–n–o–t–o–c–e–
+08
+iterte ongoing mixt -> –i–t–e–r–t–e–o–n–g–o–i–n–g–m–i–x–t–
+09
+szer cabello molest -> –s–z–e–r–c–a–b–e–l–l–o–m–o–l–e–s–t–
+10
+il jue kapott -> –i–l–j–u–e–k–a–p–o–t–t–
+11
+ercise vaccine eli -> –e–r–c–i–s–e–v–a–c–c–i–n–e–e–l–i–
+12
+perti kompleks vacances -> –p–e–r–t–i–k–o–m–p–l–e–k–s–v–a–c–a–n–c–e–s–
+13
+jon maks prince -> –j–o–n–m–a–k–s–p–r–i–n–c–e–
+14
+eterm stalled sirve -> –e–t–e–r–m–s–t–a–l–l–e–d–s–i–r–v–e–
+15
+plots irrit cocktail -> –p–l–o–t–s–i–r–r–i–t–c–o–c–k–t–a–i–l–
+16
+izarro voce nursing -> –i–z–a–r–r–o–v–o–c–e–n–u–r–s–i–n–g–
+17
+bourg hul adopts -> –b–o–u–r–g–h–u–l–a–d–o–p–t–s–
+18
+substr curling chaud -> –s–u–b–s–t–r–c–u–r–l–i–n–g–c–h–a–u–d–
+19
+onski kup molyb -> –o–n–s–k–i–k–u–p–m–o–l–y–b–
+20
+atra sierp encarg -> –a–t–r–a–s–i–e–r–p–e–n–c–a–r–g–
+21
+ironment seno seznam -> –i–r–o–n–m–e–n–t–s–e–n–o–s–e–z–n–a–m–
+22
+atinine horror beinh -> –a–t–i–n–i–n–e–h–o–r–r–o–r–b–e–i–n–h–
+23
+teresse stopping oyida -> –t–e–r–e–s–s–e–s–t–o–p–p–i–n–g–o–y–i–d–a–
+24
+yre inverter matric -> –y–r–e–i–n–v–e–r–t–e–r–m–a–t–r–i–c–
+25
+arschijn dal earth -> –a–r–s–c–h–i–j–n–d–a–l–e–a–r–t–h–
+26
+igte ful zw -> –i–g–t–e–f–u–l–z–w–
+27
+lip prestig dumb -> –l–i–p–p–r–e–s–t–i–g–d–u–m–b–
+28
+active absurd katol -> –a–c–t–i–v–e–a–b–s–u–r–d–k–a–t–o–l–
+29
+limits orosz glac -> –l–i–m–i–t–s–o–r–o–s–z–g–l–a–c–
+30
+fl peripher terakhir -> –f–l–p–e–r–i–p–h–e–r–t–e–r–a–k–h–i–r–
+31
+build ayud devotion -> –b–u–i–l–d–a–y–u–d–d–e–v–o–t–i–o–n–
+32
+piele unico tourne -> –p–i–e–l–e–u–n–i–c–o–t–o–u–r–n–e–
+33
+elike mese persoon -> –e–l–i–k–e–m–e–s–e–p–e–r–s–o–o–n–
+34
+rypted lamin effettu -> –r–y–p–t–e–d–l–a–m–i–n–e–f–f–e–t–t–u–
+35
+ocated hennes copia -> –o–c–a–t–e–d–h–e–n–n–e–s–c–o–p–i–a–
+36
+olicy familiar embora -> –o–l–i–c–y–f–a–m–i–l–i–a–r–e–m–b–o–r–a–
+37
+ahmen scarcely cola -> –a–h–m–e–n–s–c–a–r–c–e–l–y–c–o–l–a–
+38
+aturen seam stamm -> –a–t–u–r–e–n–s–e–a–m–s–t–a–m–m–
+39
+itis sharing ctx -> –i–t–i–s–s–h–a–r–i–n–g–c–t–x–
+40
+paro scarce devam -> –p–a–r–o–s–c–a–r–c–e–d–e–v–a–m–
+41
+ulers sunlight classe -> –u–l–e–r–s–s–u–n–l–i–g–h–t–c–l–a–s–s–e–
+42
+infty celu dek -> –i–n–f–t–y–c–e–l–u–d–e–k–
+43
+esti cuer message -> –e–s–t–i–c–u–e–r–m–e–s–s–a–g–e–
+44
+awesome briefly etmek -> –a–w–e–s–o–m–e–b–r–i–e–f–l–y–e–t–m–e–k–
+45
+liga believes llegar -> –l–i–g–a–b–e–l–i–e–v–e–s–l–l–e–g–a–r–
+46
+entially diagnose cellular -> –e–n–t–i–a–l–l–y–d–i–a–g–n–o–s–e–c–e–l–l–u–l–a–r–
+47
+worth xhr plaf -> –w–o–r–t–h–x–h–r–p–l–a–f–
+48
+amespace bringt monarch -> –a–m–e–s–p–a–c–e–b–r–i–n–g–t–m–o–n–a–r–c–h–
+49
+refresh ostens null -> –r–e–f–r–e–s–h–o–s–t–e–n–s–n–u–l–l–
+50
+inj ostat oath -> –i–n–j–o–s–t–a–t–o–a–t–h–
+51
+okemon dissolve agr -> –o–k–e–m–o–n–d–i–s–s–o–l–v–e–a–g–r–
+52
+izat conceito wer -> –i–z–a–t–c–o–n–c–e–i–t–o–w–e–r–
+53
+reau onc occ -> –r–e–a–u–o–n–c–o–c–c–
+54
+oh bees invit -> –o–h–b–e–e–s–i–n–v–i–t–
+55
+iac cari deduce -> –i–a–c–c–a–r–i–d–e–d–u–c–e–
+56
+kil anxious rho -> –k–i–l–a–n–x–i–o–u–s–r–h–o–
+57
+closest seitdem pointe -> –c–l–o–s–e–s–t–s–e–i–t–d–e–m–p–o–i–n–t–e–
+58
+amorph existait inund -> –a–m–o–r–p–h–e–x–i–s–t–a–i–t–i–n–u–n–d–
+59
+ikin schaff paljon -> –i–k–i–n–s–c–h–a–f–f–p–a–l–j–o–n–
+60
+irse membran vectors -> –i–r–s–e–m–e–m–b–r–a–n–v–e–c–t–o–r–s–
+61
+lerinin sorrow espec -> –l–e–r–i–n–i–n–s–o–r–r–o–w–e–s–p–e–c–
+62
+uei remedy carbono -> –u–e–i–r–e–m–e–d–y–c–a–r–b–o–n–o–
+63
+orat direkten diret -> –o–r–a–t–d–i–r–e–k–t–e–n–d–i–r–e–t–
+64
+abases horrib prolet -> –a–b–a–s–e–s–h–o–r–r–i–b–p–r–o–l–e–t–
+65
+stead prepared miej -> –s–t–e–a–d–p–r–e–p–a–r–e–d–m–i–e–j–
+66
+kee bekannte cappella -> –k–e–e–b–e–k–a–n–n–t–e–c–a–p–p–e–l–l–a–
+67
+uckles aparecen cinemat -> –u–c–k–l–e–s–a–p–a–r–e–c–e–n–c–i–n–e–m–a–t–
+68
+igid berl lurr -> –i–g–i–d–b–e–r–l–l–u–r–r–
+69
+ricas five fuoco -> –r–i–c–a–s–f–i–v–e–f–u–o–c–o–
+70
+atoms locali recebeu -> –a–t–o–m–s–l–o–c–a–l–i–r–e–c–e–b–e–u–
+71
+ge verf victoire -> –g–e–v–e–r–f–v–i–c–t–o–i–r–e–
+72
+enburg agente smooth -> –e–n–b–u–r–g–a–g–e–n–t–e–s–m–o–o–t–h–
+73
+footer adopted burnt -> –f–o–o–t–e–r–a–d–o–p–t–e–d–b–u–r–n–t–
+74
+arious heap popis -> –a–r–i–o–u–s–h–e–a–p–p–o–p–i–s–
+75
+ippets consulta nd -> –i–p–p–e–t–s–c–o–n–s–u–l–t–a–n–d–
+76
+aknya sit reinfor -> –a–k–n–y–a–s–i–t–r–e–i–n–f–o–r–
+77
+lijk hide longest -> –l–i–j–k–h–i–d–e–l–o–n–g–e–s–t–
+78
+register zij linkage -> –r–e–g–i–s–t–e–r–z–i–j–l–i–n–k–a–g–e–
+79
+size consigo video -> –s–i–z–e–c–o–n–s–i–g–o–v–i–d–e–o–
+80
+iftet knight warmth -> –i–f–t–e–t–k–n–i–g–h–t–w–a–r–m–t–h–
+81
+orien scol bieten -> –o–r–i–e–n–s–c–o–l–b–i–e–t–e–n–
+82
+estim genetics ders -> –e–s–t–i–m–g–e–n–e–t–i–c–s–d–e–r–s–
+83
+ixen flames jusqu -> –i–x–e–n–f–l–a–m–e–s–j–u–s–q–u–
+84
+owskiego removing cai -> –o–w–s–k–i–e–g–o–r–e–m–o–v–i–n–g–c–a–i–
+85
+ijski wyr plaatsen -> –i–j–s–k–i–w–y–r–p–l–a–a–t–s–e–n–
+86
+ggere citrate sponsors -> –g–g–e–r–e–c–i–t–r–a–t–e–s–p–o–n–s–o–r–s–
+87
+cad runat egun -> –c–a–d–r–u–n–a–t–e–g–u–n–
+88
+twitter mapper vivo -> –t–w–i–t–t–e–r–m–a–p–p–e–r–v–i–v–o–
+89
+asu tris embryos -> –a–s–u–t–r–i–s–e–m–b–r–y–o–s–
+90
+oshi towel stopped -> –o–s–h–i–t–o–w–e–l–s–t–o–p–p–e–d–
+91
+gado listes homog -> –g–a–d–o–l–i–s–t–e–s–h–o–m–o–g–
+92
+gna antif ji -> –g–n–a–a–n–t–i–f–j–i–
+93
+igue produto bihurt -> –i–g–u–e–p–r–o–d–u–t–o–b–i–h–u–r–t–
+94
+heim anciens apesar -> –h–e–i–m–a–n–c–i–e–n–s–a–p–e–s–a–r–
+95
+ismar dread ammo -> –i–s–m–a–r–d–r–e–a–d–a–m–m–o–
+96
+aron folgten eser -> –a–r–o–n–f–o–l–g–t–e–n–e–s–e–r–
+97
+uss custody lute -> –u–s–s–c–u–s–t–o–d–y–l–u–t–e–
+98
+skie forment pumped -> –s–k–i–e–f–o–r–m–e–n–t–p–u–m–p–e–d–
+99
+ols reveal tig -> –o–l–s–r–e–v–e–a–l–t–i–g–
