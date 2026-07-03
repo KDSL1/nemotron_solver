@@ -4,7 +4,7 @@ A comprehensive fine-tuning pipeline and deterministic reasoning engine designed
 
 This repository implements co-training SFT (Supervised Fine-Tuning) on the `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` model, utilizing LoRA adapters to achieve high-accuracy logical deduction across arithmetic, ciphers, numerals, and physics-based problems.
 
-![Accuracy Radar Chart](assets/figure_accuracy_radar.png)
+<img src="assets/figure_accuracy_radar.png" width="500" alt="Accuracy Radar Chart">
 
 ---
 
@@ -55,7 +55,7 @@ The reasoning problems span 9 categories, each requiring a specific solver/reaso
 
 The pipeline trains the LLM to write out its reasoning step-by-step before producing the final answer inside `\boxed{...}`.
 
-![Pipeline Flowchart](assets/figure_pipeline_flow.png)
+<img src="assets/figure_pipeline_flow.png" width="600" alt="Pipeline Flowchart">
 
 ### Key Pipeline Stages:
 1. **Rule Hypothesis Generation**: The investigators look at few-shot examples to identify the rule. If a valid rule is found, the problem is marked as `rule_found`.
@@ -75,31 +75,31 @@ SFT training yields significant gains over the base model. The radar chart above
 
 An animated visualization of the optimizer trajectory traversing a non-convex loss landscape to find the global minimum for LoRA rank and learning rate parameters:
 
-![Loss Landscape Search](assets/loss_landscape_search.gif)
+<img src="assets/loss_landscape_search.gif" width="450" alt="Loss Landscape Search">
 
 ### Solver Accuracy Convergence
 
 The vertical bar plot below illustrates solver accuracy convergence per category across the training epochs:
 
-![Accuracy Convergence](assets/logprob_training_convergence.gif)
+<img src="assets/logprob_training_convergence.gif" width="480" alt="Accuracy Convergence">
 
 ### Chain-of-Thought Generation Flow
 
 A step-by-step representation of the Nemotron Solver generating a natural reasoning chain-of-thought trace for a cryptarithm deduction task:
 
-![CoT Generation Flow](assets/cot_generation_flow.gif)
+<img src="assets/cot_generation_flow.gif" width="550" alt="CoT Generation Flow">
 
 ### Token Log-Probability Heatmap
 
 The model's token-level trace showing log-probability confidence levels during reasoning. Greener tokens show high-confidence paths, while orange and red show spots where search/verification steps were triggered:
 
-![Token Logprob Heatmap](assets/figure_token_logprobs.png)
+<img src="assets/figure_token_logprobs.png" width="600" alt="Token Logprob Heatmap">
 
 ### SFT Optimization Dashboard
 
 Static diagnostic curves showing cross-entropy loss decay, learning rate schedules, gradient norm stability, and validation set accuracy progression:
 
-![Training Progress](assets/figure_training_curves.png)
+<img src="assets/figure_training_curves.png" width="600" alt="Training Progress">
 
 ---
 
