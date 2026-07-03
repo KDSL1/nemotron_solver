@@ -87,11 +87,12 @@ def gif_loss_landscape_search(output_dir, size=64):
         angle = 45 + (i * 1.5)
         ax.view_init(elev=35, azim=angle)
         
-        ax.set_title("LoRA Optimizer Path on Loss Surface", fontsize=12, weight="bold", pad=15)
-        ax.set_xlabel("Learning Rate", labelpad=10)
-        ax.set_ylabel("LoRA Rank", labelpad=10)
-        ax.set_zlabel("Loss Value", labelpad=10)
+        ax.set_title("LoRA Optimizer Path on Loss Surface", fontsize=12, weight="bold", pad=10)
+        ax.set_xlabel("Learning Rate", labelpad=5)
+        ax.set_ylabel("LoRA Rank", labelpad=5)
+        ax.set_zlabel("Loss Value", labelpad=5)
         
+        fig.subplots_adjust(left=0.05, right=0.95, bottom=0.05, top=0.92)
         fig.canvas.draw()
         rgba = fig.canvas.buffer_rgba()
         frame = Image.frombuffer("RGBA", fig.canvas.get_width_height(), rgba, "raw", "RGBA", 0, 1).convert("RGB")
@@ -151,6 +152,7 @@ def gif_logprob_training_convergence(output_dir):
             
         ax.grid(True, axis="x", linestyle="--", alpha=0.5)
         
+        fig.tight_layout()
         fig.canvas.draw()
         rgba = fig.canvas.buffer_rgba()
         frame = Image.frombuffer("RGBA", fig.canvas.get_width_height(), rgba, "raw", "RGBA", 0, 1).convert("RGB")
@@ -189,6 +191,8 @@ def gif_cot_generation_flow(output_dir):
     for i in range(len(steps)):
         ax.clear()
         ax.axis("off")
+        ax.set_xlim(0, 1)
+        ax.set_ylim(0, 1)
         
         ax.text(0.05, 0.9, "Nemotron Solver Reasoning Agent CoT Trace", fontsize=12, weight="bold", color=ACCENT)
         start_idx = max(0, i - 5)
@@ -218,6 +222,7 @@ def gif_cot_generation_flow(output_dir):
         rect_fill = patches.Rectangle((0.3, 0.03), 0.65 * (prog/100), 0.04, facecolor=GREEN)
         ax.add_patch(rect_fill)
         
+        fig.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
         fig.canvas.draw()
         rgba = fig.canvas.buffer_rgba()
         frame = Image.frombuffer("RGBA", fig.canvas.get_width_height(), rgba, "raw", "RGBA", 0, 1).convert("RGB")

@@ -161,6 +161,8 @@ def figure_pipeline_flow(output_dir):
     print("Generating Figure 3: Pipeline Flow...")
     fig, ax = plt.subplots(figsize=(12, 6.5))
     ax.axis("off")
+    ax.set_xlim(0, 13)
+    ax.set_ylim(0, 7)
     
     # Define boxes and connections
     box_style = dict(boxstyle="round,pad=0.5", facecolor=PANEL_BG, edgecolor=BORDER_CLR, lw=1.5)
@@ -234,8 +236,11 @@ def figure_token_logprobs(output_dir):
         -0.05, -0.02, 0.0, -0.03, 0.0, -0.04, 0.0, -0.02, 0.0, -0.05, -0.02, -0.01, -0.02
     ]
     
-    x, y = 0.02, 0.75
-    line_h = 0.22
+    ax.set_xlim(0, 1.0)
+    ax.set_ylim(0, 1.0)
+    
+    x, y = 0.02, 0.82
+    line_h = 0.14
     
     for tok, lp in zip(tokens, logprobs):
         if tok == "\n":
@@ -259,14 +264,14 @@ def figure_token_logprobs(output_dir):
             
         if tok.strip():
             rect = patches.FancyBboxPatch(
-                (x, y - 0.05), width - 0.005, 0.14,
+                (x, y - 0.03), width - 0.005, 0.09,
                 boxstyle="round,pad=0.01",
                 facecolor=bg_color, edgecolor=border, lw=0.8
             )
             ax.add_patch(rect)
-            ax.text(x + (width - 0.005)/2, y + 0.01, tok, ha="center", va="center", color=TEXT_CLR, fontsize=10, family="monospace", weight="bold")
+            ax.text(x + (width - 0.005)/2, y + 0.015, tok, ha="center", va="center", color=TEXT_CLR, fontsize=10, family="monospace", weight="bold")
         else:
-            ax.text(x + width/2, y + 0.01, " ", ha="center", va="center", color=TEXT_CLR, fontsize=10, family="monospace")
+            ax.text(x + width/2, y + 0.015, " ", ha="center", va="center", color=TEXT_CLR, fontsize=10, family="monospace")
             
         x += width
         if x > 0.95:
@@ -275,19 +280,19 @@ def figure_token_logprobs(output_dir):
             
     ax.text(0.5, 0.95, "Token Generation Log-Probability Visualization (CoT Decryption Trace)", ha="center", va="center", fontsize=13, weight="bold", color=TEXT_CLR)
     
-    ax.text(0.2, 0.1, "Logprob Ranges:", ha="left", va="center", fontsize=10, color=TEXT_CLR)
+    ax.text(0.1, 0.06, "Logprob Ranges:", ha="left", va="center", fontsize=10, color=TEXT_CLR)
     
-    rect_g = patches.FancyBboxPatch((0.35, 0.05), 0.08, 0.1, boxstyle="round,pad=0.01", facecolor="#1b4d22", edgecolor="#2ea043")
+    rect_g = patches.FancyBboxPatch((0.30, 0.02), 0.12, 0.08, boxstyle="round,pad=0.01", facecolor="#1b4d22", edgecolor="#2ea043")
     ax.add_patch(rect_g)
-    ax.text(0.39, 0.1, "[-0.05, 0]", ha="center", va="center", color=TEXT_CLR, fontsize=9, family="monospace")
+    ax.text(0.36, 0.06, "[-0.05, 0]", ha="center", va="center", color=TEXT_CLR, fontsize=9, family="monospace")
     
-    rect_y = patches.FancyBboxPatch((0.50, 0.05), 0.08, 0.1, boxstyle="round,pad=0.01", facecolor="#4d3d1b", edgecolor="#d4a72c")
+    rect_y = patches.FancyBboxPatch((0.48, 0.02), 0.15, 0.08, boxstyle="round,pad=0.01", facecolor="#4d3d1b", edgecolor="#d4a72c")
     ax.add_patch(rect_y)
-    ax.text(0.54, 0.1, "[-0.15, -0.05]", ha="center", va="center", color=TEXT_CLR, fontsize=9, family="monospace")
+    ax.text(0.555, 0.06, "[-0.15, -0.05]", ha="center", va="center", color=TEXT_CLR, fontsize=9, family="monospace")
     
-    rect_r = patches.FancyBboxPatch((0.65, 0.05), 0.08, 0.1, boxstyle="round,pad=0.01", facecolor="#662222", edgecolor="#f85149")
+    rect_r = patches.FancyBboxPatch((0.68, 0.02), 0.12, 0.08, boxstyle="round,pad=0.01", facecolor="#662222", edgecolor="#f85149")
     ax.add_patch(rect_r)
-    ax.text(0.69, 0.1, "[< -0.15]", ha="center", va="center", color=TEXT_CLR, fontsize=9, family="monospace")
+    ax.text(0.74, 0.06, "[< -0.15]", ha="center", va="center", color=TEXT_CLR, fontsize=9, family="monospace")
     
     _save(fig, os.path.join(output_dir, "figure_token_logprobs.png"))
 
