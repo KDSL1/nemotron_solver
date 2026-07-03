@@ -94,8 +94,9 @@ def gif_loss_landscape_search(output_dir, size=64):
         
         fig.subplots_adjust(left=0.05, right=0.95, bottom=0.05, top=0.92)
         fig.canvas.draw()
+        w, h = fig.canvas.get_width_height(physical=True)
         rgba = fig.canvas.buffer_rgba()
-        frame = Image.frombuffer("RGBA", fig.canvas.get_width_height(), rgba, "raw", "RGBA", 0, 1).convert("RGB")
+        frame = Image.frombuffer("RGBA", (w, h), rgba, "raw", "RGBA", 0, 1).convert("RGB")
         frames.append(frame)
         
     plt.close(fig)
@@ -154,8 +155,9 @@ def gif_logprob_training_convergence(output_dir):
         
         fig.tight_layout()
         fig.canvas.draw()
+        w, h = fig.canvas.get_width_height(physical=True)
         rgba = fig.canvas.buffer_rgba()
-        frame = Image.frombuffer("RGBA", fig.canvas.get_width_height(), rgba, "raw", "RGBA", 0, 1).convert("RGB")
+        frame = Image.frombuffer("RGBA", (w, h), rgba, "raw", "RGBA", 0, 1).convert("RGB")
         frames.append(frame)
         
     plt.close(fig)
@@ -224,8 +226,9 @@ def gif_cot_generation_flow(output_dir):
         
         fig.subplots_adjust(left=0.02, right=0.98, bottom=0.02, top=0.98)
         fig.canvas.draw()
+        w, h = fig.canvas.get_width_height(physical=True)
         rgba = fig.canvas.buffer_rgba()
-        frame = Image.frombuffer("RGBA", fig.canvas.get_width_height(), rgba, "raw", "RGBA", 0, 1).convert("RGB")
+        frame = Image.frombuffer("RGBA", (w, h), rgba, "raw", "RGBA", 0, 1).convert("RGB")
         frames.append(frame)
         
     plt.close(fig)
